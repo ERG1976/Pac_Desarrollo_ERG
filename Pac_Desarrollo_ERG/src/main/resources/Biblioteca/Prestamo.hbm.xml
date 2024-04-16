@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Biblioteca.Prestamo" table="prestamo">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="libro" class="Biblioteca.Libro" column="libro_id" />
+        <many-to-one name="lector" class="Biblioteca.Lector" column="lector_id" />
+        <property name="fechaPrestamo" type="date">
+            <column name="fecha_prestamo" />
+        </property>
+        <property name="fechaDevolucion" type="date">
+            <column name="fecha_devolucion" />
+        </property>
+    </class>
+</hibernate-mapping>

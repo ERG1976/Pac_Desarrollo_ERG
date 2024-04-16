@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Biblioteca.Libro" table="libro">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="titulo" type="string">
+            <column name="titulo" />
+        </property>
+        <property name="autor" type="string">
+            <column name="autor" />
+        </property>
+        <property name="anoPublicacion" type="int">
+            <column name="ano_publicacion" />
+        </property>
+        <property name="disponible" type="boolean">
+            <column name="disponible" />
+        </property>
+    </class>
+</hibernate-mapping>
