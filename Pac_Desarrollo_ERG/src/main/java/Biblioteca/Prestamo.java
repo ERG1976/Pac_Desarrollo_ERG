@@ -24,5 +24,48 @@ public class Prestamo {
     @Temporal(TemporalType.DATE)
     private Date fechadevolucion;
 
-    // Constructor, getters y setters
+    // Constructor
+    public Prestamo() {
+    }
+
+    // Getters y Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Libro getLibro() {
+        return libro;
+    }
+
+    public void setLibro(Libro libro) {
+        this.libro = libro;
+    }
+
+    public Lector getLector() {
+        return lector;
+    }
+
+    public void setLector(Lector lector) {
+        this.lector = lector;
+    }
+
+    public Date getFechaPrestamo() {
+        return fechaprestamo;
+    }
+
+    public void setFechaPrestamo(Date fechaprestamo) {
+        this.fechaprestamo = fechaprestamo;
+    }
+
+    public Date getFechaDevolucion() {
+        return fechadevolucion;
+    }
+
+    public void setFechaDevolucion(Date fechadevolucion) {
+        this.fechadevolucion = fechadevolucion;
+    }
 }

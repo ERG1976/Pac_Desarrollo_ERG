@@ -3,18 +3,24 @@
     "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
+    <!-- Define el mapeo de la clase Prestamo a la tabla "prestamo" en la base de datos -->
     <class name="Biblioteca.Prestamo" table="prestamo">
+        <!-- Define la clave primaria -->
         <id name="id" type="int">
-            <column name="id" />
-            <generator class="native" />
+            <column name="id" /> <!-- Nombre de la columna en la tabla -->
+            <generator class="native" /> <!-- Generador de claves primarias -->
         </id>
+        <!-- Mapeo de la relación muchos a uno con la clase Libro -->
         <many-to-one name="libro" class="Biblioteca.Libro" column="libro_id" />
+        <!-- Mapeo de la relación muchos a uno con la clase Lector -->
         <many-to-one name="lector" class="Biblioteca.Lector" column="lector_id" />
+        <!-- Mapeo de la propiedad fechaPrestamo -->
         <property name="fechaPrestamo" type="date">
-            <column name="fecha_prestamo" />
+            <column name="fecha_prestamo" /> <!-- Nombre de la columna en la tabla -->
         </property>
+        <!-- Mapeo de la propiedad fechaDevolucion -->
         <property name="fechaDevolucion" type="date">
-            <column name="fecha_devolucion" />
+            <column name="fecha_devolucion" /> <!-- Nombre de la columna en la tabla -->
         </property>
     </class>
 </hibernate-mapping>

@@ -3,22 +3,26 @@
     "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
+    <!-- Define el mapeo de la clase Libro a la tabla "libro" en la base de datos -->
     <class name="Biblioteca.Libro" table="libro">
+        <!-- Define la clave primaria -->
         <id name="id" type="int">
-            <column name="id" />
-            <generator class="native" />
+            <column name="id" /> <!-- Nombre de la columna en la tabla -->
+            <generator class="native" /> <!-- Generador de claves primarias -->
         </id>
+        <!-- Define las propiedades de la clase -->
         <property name="titulo" type="string">
-            <column name="titulo" />
+            <column name="titulo" /> <!-- Nombre de la columna en la tabla -->
         </property>
         <property name="autor" type="string">
-            <column name="autor" />
+            <column name="autor" /> <!-- Nombre de la columna en la tabla -->
         </property>
         <property name="anoPublicacion" type="int">
-            <column name="ano_publicacion" />
+            <column name="ano_publicacion" /> <!-- Nombre de la columna en la tabla -->
         </property>
         <property name="disponible" type="boolean">
-            <column name="disponible" />
+            <column name="disponible" /> <!-- Nombre de la columna en la tabla -->
         </property>
     </class>
 </hibernate-mapping>
+

@@ -1,22 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>IlernaOnline</groupId>
-  <artifactId>hibernate_conection</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <dependencies>  
-	  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-core</artifactId>
-    <version>5.6.12.Final</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.33</version>
-</dependency>
+    <modelVersion>4.0.0</modelVersion> <!-- Versión del modelo del proyecto -->
 
+    <groupId>IlernaOnline</groupId> <!-- Identificador único del grupo -->
+    <artifactId>hibernate_conection</artifactId> <!-- Identificador único del artefacto -->
+    <version>0.0.1-SNAPSHOT</version> <!-- Versión del artefacto -->
 
-  </dependencies>
+    <dependencies> <!-- Lista de dependencias del proyecto -->
+        <!-- Dependencia de Hibernate Core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.6.12.Final</version> <!-- Versión de Hibernate Core -->
+        </dependency>
+        <!-- Dependencia del conector de MySQL -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version> <!-- Versión del conector de MySQL -->
+        </dependency>
+    </dependencies>
 </project>
